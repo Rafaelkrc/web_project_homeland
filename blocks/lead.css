@@ -3,6 +3,7 @@
   margin: auto;
   text-align: center;
   justify-content: center;
+  justify-self: center;
   margin-top: 90px;
 }
 
@@ -12,7 +13,7 @@
   font-size: 96px;
   line-height: 100px;
   text-align: center;
-  margin: auto;
+  justify-self: center;
 }
 
 .lead__subtitle {
@@ -20,6 +21,7 @@
   font-size: 30px;
   line-height: 36px;
   text-align: center;
+
   margin: auto;
   margin-top: 32px;
 }
@@ -38,7 +40,6 @@
   .lead__title {
     max-width: 530px;
     font-size: 75px;
-    margin-left: 119px;
   }
 
   .lead__subtitle {
@@ -62,7 +63,6 @@
     line-height: 44px;
     text-align: center;
     margin-top: 50px;
-    margin-left: 46px;
   }
 
   .lead__subtitle {
