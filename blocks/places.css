@@ -6,7 +6,6 @@
 
 .places__place {
   max-width: 984px;
-  max-height: 832px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
@@ -16,9 +15,13 @@
     "buttom paragraph";
 }
 
+.places__place_other {
+  margin-top: 80px;
+}
+
 .place__title {
   max-width: 460px;
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-weight: 900;
   font-size: 72px;
   line-height: 76px;
@@ -34,6 +37,10 @@
   margin-top: 48px;
 }
 
+.places__image:hover {
+  opacity: 50%;
+}
+
 .button {
   width: 356px;
   height: 48px;
@@ -45,11 +52,19 @@
   gap: 10px;
   background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
   box-shadow: 5px 5px 10px 0px #00000040;
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-weight: 600;
   font-size: 16px;
   color: #fff;
   margin-top: 48px;
+}
+
+.button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 99.98%
+  );
 }
 
 .place__website {
@@ -57,11 +72,12 @@
   color: #aaaaaa;
   grid-area: website;
   text-align: left;
+  align-self: end;
 }
 
 .website__heading {
   max-width: 85.17px;
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
@@ -72,7 +88,7 @@
 .website__artist {
   width: 456px;
   max-height: 22px;
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
@@ -80,7 +96,7 @@
 }
 
 .paragraph {
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 163%;
@@ -90,14 +106,142 @@
 }
 .website__paragraph-one {
   max-width: 484px;
-  max-height: 203px;
 }
 
 .website__paragraph-two {
   max-width: 484px;
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 163%;
   margin-top: 25px;
+}
+
+.website__paragraph-three {
+  max-width: 484px;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+  .places {
+    max-width: 720px;
+    margin: auto;
+    margin-top: 88px;
+  }
+
+  .place__title {
+    max-width: 340px;
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .places__image {
+    max-width: 340px;
+    max-height: 340px;
+  }
+
+  .place__website {
+    max-width: 352px;
+  }
+
+  .paragraph {
+    font-size: 16px;
+    margin-top: 48px;
+  }
+
+  .website__paragraph-one {
+    max-width: 352px;
+  }
+
+  .website__paragraph-two {
+    max-width: 352px;
+    font-size: 16px;
+  }
+
+  .website__paragraph-three {
+    max-width: 352px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .places {
+    max-width: 320px;
+    margin: auto;
+    margin-top: 62px;
+  }
+
+  .places__place {
+    max-width: 320px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "website"
+      "image"
+      "paragraph"
+      "buttom";
+  }
+
+  .place__title {
+    max-width: 288px;
+    font-size: 32px;
+    line-height: 35px;
+    margin-left: 16px;
+  }
+
+  .place__website {
+    margin: 30px auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 16px;
+  }
+
+  .website__heading {
+    font-size: 12px;
+    line-height: 100%;
+  }
+
+  .website__artist {
+    width: 100%;
+  }
+  .places__image {
+    max-width: 320px;
+    max-height: 395px;
+    margin-top: 30px;
+  }
+
+  .paragraph {
+    font-size: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .website__paragraph-one {
+    width: 100%;
+  }
+
+  .website__paragraph-two {
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  .website__paragraph-three {
+    max-width: 100%;
+    font-size: 16px;
+  }
+  .button {
+    width: 288px;
+    height: 48px;
+    font-size: 12px;
+    margin: 30px auto;
+  }
 }

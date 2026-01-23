@@ -1,6 +1,5 @@
 .lead {
   max-width: 984px;
-  max-height: 983px;
   margin: auto;
   text-align: center;
   justify-content: center;
@@ -38,7 +37,6 @@
 
   .lead__title {
     max-width: 530px;
-    max-height: 158px;
     font-size: 75px;
     margin-left: 119px;
   }
@@ -60,7 +58,6 @@
 @media screen and (max-width: 544px) {
   .lead__title {
     max-width: 228px;
-    max-height: 88px;
     font-size: 40px;
     line-height: 44px;
     text-align: center;
@@ -70,7 +67,6 @@
 
   .lead__subtitle {
     max-width: 288px;
-    max-height: 40px;
     font-size: 16px;
     margin: 16px;
     line-height: 20px;
